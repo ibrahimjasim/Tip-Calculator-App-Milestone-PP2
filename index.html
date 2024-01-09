@@ -10,15 +10,17 @@
 
 <body>
     <main>
+        <!-- The <header> section  -->
         <header>
             <h2>Tip Calculator</h2>
         </header>
+          <!-- This <div> with class 'calculator' acts as a container for the tip calculator interface. -->   
         <div class="calculator">
             <div class="input-group">
                 <label for="billTotal">Bill Total:</label>
                 <input type="number" id="billTotal" placeholder="Enter Bill Total" required>
             </div>
-
+             <!-- This 'input-group' <div> is for the tip percentage input, using a range slider. -->
             <div class="input-group">
                 <label for="tipPercentage">Tip %:</label>
                 <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipAndTotal()"
@@ -26,12 +28,13 @@
                 <span id="tipPercentLabel">15%</span>
             </div>
 
+              <!-- This 'input-group' <div> is for the number of people to split the bill. -->
             <div class="input-group">
                 <label for="splitNumber">Split:</label>
                 <input type="range" id="splitNumber" min="1" max="20" value="1" oninput="updateTipAndTotal()" required>
                 <span id="splitNumberLabel">1</span>
             </div>
-
+            <!-- This 'results' <div> displays the calculated tip total, total bill including tip, and the amount per person if split. -->
             <div class="results">
                 <div class="result-item">
                     <label>Tip Total:</label>
@@ -42,14 +45,15 @@
                     <label>Total Bill:</label>
                     <span id="totalBillWithTip">$0.00</span>
                 </div>
-
                 <div class="result-item">
                     <label>Split Total:</label>
                     <span id="splitTotal">$0.00</span>
                 </div>
             </div>
+            <!--This is a reast button to skip reload the page evry time the user wants to calculate-->
             <button id="resetBtn">Reset</button>
         </div>
+          <!-- This <div> provides a toggle for switching between light and dark mode. -->
         <div class="dark-mode-toggle">
             <i class="fa-solid fa-sun"></i>
             <i class="fa-solid fa-moon"></i>
@@ -57,7 +61,8 @@
             <label for="darkModeToggle" class="toggle-label">Dark Mode</label>
         </div>
     </main>
-
+    
+    <!--javascript and fontawesome-->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/dac366aa16.js" crossorigin="anonymous"></script>
 </body>
