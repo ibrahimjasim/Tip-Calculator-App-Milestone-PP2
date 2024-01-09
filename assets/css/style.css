@@ -93,3 +93,98 @@ input[type="range"]::-webkit-slider-thumb {
 .result-item span {
     font-weight: bold;
 }
+
+
+#resetBtn {
+    background-color: #ff6666; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Dark mode styles */
+
+div.dark-mode-toggle{
+margin-top: 10px;
+}
+
+.dark-mode {
+    background: linear-gradient(to bottom, #363537, #1a1a1b); /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.dark-mode .calculator {
+    background: rgba(0, 0, 0, 0.7); /* Dark background for calculator */
+    color: #ffffff; /* Light text color */
+}
+
+.dark-mode input[type="number"], 
+.dark-mode input[type="range"] {
+    background-color: #333333; /* Darker input fields */
+    border-color: #444444; /* Darker borders */
+    color: #ffffff; /* Light text color */
+}
+
+.dark-mode .results {
+    background: #222222; /* Darker results background */
+}
+
+.dark-mode #resetBtn {
+    background-color: #993333; /* Darker reset button */
+}
+
+/* Hide the actual checkbox, but keep it accessible */
+.toggle-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+/* Custom toggle switch style */
+.toggle-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: #e097f7;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+/* Creating the toggle switch appearance with ::after pseudo-element */
+.toggle-label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+/* Move the toggle switch when the checkbox is checked */
+.toggle-checkbox:checked + .toggle-label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+/* Optional: Change background of the switch when active */
+.toggle-checkbox:checked + .toggle-label {
+    background: #e097f7;
+}
+
+/* Style adjustments for dark mode */
+.dark-mode .toggle-label {
+    /* Add any specific styles for the toggle switch in dark mode */
+}

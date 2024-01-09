@@ -6,6 +6,7 @@ function initializeTipCalculator() {
     document.getElementById('tipPercentage').addEventListener('input', updateTipAndTotal);
     document.getElementById('splitNumber').addEventListener('input', updateTipAndTotal);
     document.getElementById('resetBtn').addEventListener('click', resetCalculator);
+    document.getElementById('darkModeToggle').addEventListener('change', toggleDarkMode);
 }
 
 /**
@@ -35,6 +36,10 @@ function resetCalculator() {
 
     updateTipAndTotal(); // Update the displayed values
 }
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
 
 
 // Run after the page is fully loaded
