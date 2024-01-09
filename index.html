@@ -18,7 +18,8 @@
 
             <div class="input-group">
                 <label for="tipPercentage">Tip %:</label>
-                <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipAndTotal()" required>
+                <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipAndTotal()"
+                    required>
                 <span id="tipPercentLabel">15%</span>
             </div>
 
@@ -33,6 +34,18 @@
                     <label>Tip Total:</label>
                     <span id="tipTotal">$0.00</span>
                 </div>
+
+                <div class="result-item">
+                    <label>Total Bill:</label>
+                    <span id="totalBillWithTip">$0.00</span>
+                </div>
+
+                <div class="result-item">
+                    <label>Split Total:</label>
+                    <span id="splitTotal">$0.00</span>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="assets/js/script.js"></script>
