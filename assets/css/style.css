@@ -188,3 +188,10 @@ margin-top: 10px;
 .dark-mode .toggle-label {
     /* Add any specific styles for the toggle switch in dark mode */
 }
+
+.footer{
+    position: absolute; 
+    bottom: 0; 
+    left: 12px; 
+    z-index: 10;
+}
