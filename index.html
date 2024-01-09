@@ -15,6 +15,18 @@
                 <label for="billTotal">Bill Total:</label>
                 <input type="number" id="billTotal" placeholder="Enter Bill Total" required>
             </div>
+
+            <div class="input-group">
+                <label for="tipPercentage">Tip %:</label>
+                <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipAndTotal()" required>
+                <span id="tipPercentLabel">15%</span>
+            </div>
+
+            <div class="input-group">
+                <label for="splitNumber">Split:</label>
+                <input type="range" id="splitNumber" min="1" max="20" value="1" oninput="updateTipAndTotal()" required>
+                <span id="splitNumberLabel">1</span>
+            </div>
     </main>
 
     <script src="assets/js/script.js"></script>
