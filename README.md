@@ -20,20 +20,26 @@ The text was written in contrasting colours so that the user can comprehend what
 ## Enter an amount
 ![Home 2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/c12bccb4-c194-42ec-a01e-3c208d037765)
 This is straightforward as it allows for the user to understand that this calculator can be used for all kinds of tip/percentage based calculations.
-The place holder is a simple 
-
-## Split
-![spilt2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/a6a57936-19b9-403c-b4e2-2c6f356cdfbf)
+The place holder is a simple $-sign as this is a universal symbol for "money", even in countries that use different currencies.
 
 ## Tip 
 ![tip%2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/d8fe9c5e-9083-40b2-a5fc-99e16dda4423)
+To keep the platform user friendly, a simple sliding-action is required by the user in order to select the desired percentage to tip/ add to the billed amount. 
+It only allows for whole numbers from 1-100% as to keep the simplicity and user friendlienes to a wide audience range. 
+
+## Split
+![spilt2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/a6a57936-19b9-403c-b4e2-2c6f356cdfbf)
+Just as with the Tip, this field requires the user to slide the cursor to the total amount of people that desire to share the bill.
+The limit is set to 20, as to keep true to the purpose of the tip calculator: a way to simply divide the bill amongst a group of people.
 
 ## Results
 ![result2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/d44b0a25-eb2a-44dc-bc77-164fee58b946)
+A simple table displaying all nessesary information and output for the useer to both follow, comprehend and share with a relevant audience.
 
-## Rest button 
+## Reset button 
 ![rest2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/5eab5739-878b-44a2-a89c-fb993b46f275)
+A simple way to empty the fields and start over. This allows for user friendlieness as it cuts out unessesary emptying each individual field. 
 
 ## Dark mode
 ![darkmode2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/3ce45a3e-0968-4a55-821c-30ec9cc7731e)
-
+This is also to keep true to the purpose of the calculator: to be used at restaurants that are usually dimmed, pubs that are dark and other situations that may encourage the user to protect their vision from the vivid and colourful platform.
