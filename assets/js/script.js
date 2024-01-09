@@ -5,6 +5,7 @@ function initializeTipCalculator() {
     updateTipAndTotal(); // Set initial values for the tip calculator
     document.getElementById('tipPercentage').addEventListener('input', updateTipAndTotal);
     document.getElementById('splitNumber').addEventListener('input', updateTipAndTotal);
+    document.getElementById('resetBtn').addEventListener('click', resetCalculator);
 }
 
 /**
@@ -26,3 +27,15 @@ function updateTipAndTotal() {
     document.getElementById('totalBillWithTip').innerText = '$' + totalBillWithTip.toFixed(2);
     document.getElementById('splitTotal').innerText = '$' + splitTotal.toFixed(2);
 }
+
+function resetCalculator() {
+    document.getElementById('billTotal').value = '';
+    document.getElementById('tipPercentage').value = 15; 
+    document.getElementById('splitNumber').value = 1; 
+
+    updateTipAndTotal(); // Update the displayed values
+}
+
+
+// Run after the page is fully loaded
+document.addEventListener('DOMContentLoaded', initializeTipCalculator);
