@@ -49,3 +49,9 @@ The red colour is a universal colour that warns the user not to be too eager to 
 ## Dark mode
 ![darkmode2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/3ce45a3e-0968-4a55-821c-30ec9cc7731e)
 This is also to keep true to the purpose of the calculator: to be used at restaurants that are usually dimmed, pubs that are dark and other situations that may encourage the user to protect their vision from the vivid and colourful platform.
+
+## Thorough testing steps & screenshots of validator testing
+Since a calculator is supped to calculate, I input values that are easy to double check.
+For example, a $100 + 10% tip = $110 total. $110 divided between 2 people = $55. This worked out right.
+
+I also used dark mode and an extremely large number (100000000000000000000000000000000000000) as to test the near maximum of each field (100% tip and split between 20 persons), and it still worked without any error.
