@@ -18,20 +18,19 @@
         <div class="calculator">
             <div class="input-group">
                 <label for="billTotal">Bill Total:</label>
-                <input type="number" id="billTotal" placeholder="Enter Bill Total" required>
+                <input type="number" id="billTotal" placeholder="Enter Bill Total">
             </div>
              <!-- This 'input-group' <div> is for the tip percentage input, using a range slider. -->
             <div class="input-group">
                 <label for="tipPercentage">Tip %:</label>
-                <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipAndTotal()"
-                    required>
+                <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipAndTotal()">
                 <span id="tipPercentLabel">15%</span>
             </div>
 
               <!-- This 'input-group' <div> is for the number of people to split the bill. -->
             <div class="input-group">
                 <label for="splitNumber">Split:</label>
-                <input type="range" id="splitNumber" min="1" max="20" value="1" oninput="updateTipAndTotal()" required>
+                <input type="range" id="splitNumber" min="1" max="20" value="1" oninput="updateTipAndTotal()">
                 <span id="splitNumberLabel">1</span>
             </div>
             <!-- This 'results' <div> displays the calculated tip total, total bill including tip, and the amount per person if split. -->
