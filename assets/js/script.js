@@ -25,20 +25,20 @@ function initializeEventListeners() {
  * Updates the displayed values accordingly.
  */
 function updateTipAndTotal() {
-    const billTotal = parseFloat(getElementById('billTotal').value) || 0;
-    const tipPercent = parseInt(getElementById('tipPercentage').value) || 0;
-    const splitNumber = Math.max(parseInt(getElementById('splitNumber').value) || 1, 1); // Ensure at least 1
+    var billTotal = parseFloat(getElementById('billTotal').value) || 0;
+    var tipPercent = parseInt(getElementById('tipPercentage').value) || 0;
+    var splitNumber = Math.max(parseInt(getElementById('splitNumber').value) || 1, 1); // Ensure at least 1
 
-    getElementById('tipPercentLabel').innerText = `${tipPercent}%`;
+    getElementById('tipPercentLabel').innerText = tipPercent + '%';
     getElementById('splitNumberLabel').innerText = splitNumber.toString();
 
-    const tipAmount = billTotal * (tipPercent / 100);
-    const totalBillWithTip = billTotal + tipAmount;
-    const splitTotal = totalBillWithTip / splitNumber;
+    var tipAmount = billTotal * (tipPercent / 100);
+    var totalBillWithTip = billTotal + tipAmount;
+    var splitTotal = totalBillWithTip / splitNumber;
 
-    getElementById('tipTotal').innerText = `$${tipAmount.toFixed(2)}`;
-    getElementById('totalBillWithTip').innerText = `$${totalBillWithTip.toFixed(2)}`;
-    getElementById('splitTotal').innerText = `$${splitTotal.toFixed(2)}`;
+    getElementById('tipTotal').innerText = '$' + tipAmount.toFixed(2);
+    getElementById('totalBillWithTip').innerText = '$' + totalBillWithTip.toFixed(2);
+    getElementById('splitTotal').innerText = '$' + splitTotal.toFixed(2);
 }
 
 /**
@@ -62,7 +62,7 @@ function toggleDarkMode() {
 }
 
 // Run after the page is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     initializeEventListeners();
     updateTipAndTotal(); // Set initial values for the tip calculator
 });
