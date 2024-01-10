@@ -55,22 +55,23 @@ header {
 
 /* Range input style: Customizes the appearance of range sliders. */
 input[type="range"] {
+    -webkit-appearance: none;
     width: 100%;
     margin: 10px 0;
 }
 
 /* Range track style: Customizes the slider track. */
-input[type="range"] {width: 100%;
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
     height: 8px;
     background: linear-gradient(to left, #e097f7, #4874ee);
     border-radius: 4px;
     border: none;
 }
-    
 
 /* Range thumb style: Customizes the slider thumb. */
-input[type="range"] {
-    appearance: none;
+input[type="range"]::-webkit-slider-thumb {
+    appearance: ;
     width: 20px;
     height: 20px;
     background: #fafafa;
@@ -195,6 +196,8 @@ div.dark-mode-toggle {
     background: #e097f7;
 }
 
+
+
 /* Footer style: Positions the footer at the bottom. */
 .footer {
     position: absolute;
@@ -202,44 +205,62 @@ div.dark-mode-toggle {
     left: 12px;
     z-index: 10;
 }
-
-/* Media query for mobile screens */
-@media (max-width: 768px) {
+/* Media query for smaller screens (max-width: 414px) */
+@media (max-width: 414px) {
     body {
         justify-content: flex-start;
+        align-items: flex-start;
         height: auto;
+        padding: 10px;
     }
 
-    /* Adjust calculator styles for mobile */
+
     .calculator {
-        width: 100%;
-        max-width: none;
+        padding: 27px;
         height: auto;
-        padding: 20px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        max-width: none;
+        margin: 100px auto;
     }
 
-    /* Adjust the footer for mobile */
-    footer {
-        position: relative;
-        left: 0;
-        padding: 10px 0;
-        width: 100%;
+    header {
+        text-align: center;
+        font-family: Arial, sans-serif;
+       padding-top: 30px;
+    }
+    
+
+    .calculator input[type="number"] {
+        font-size: 16px;
+        padding: 8px;
     }
 
-    /* Adjust the toggle switch size for mobile */
-    .toggle-label {
-        width: 40px;
-        /* Smaller toggle on mobile */
-        height: 20px;
-        /* Smaller toggle on mobile */
+    .results {
+        padding: 8px;
     }
 
-    /* Adjustments for the toggle switch after element on mobile */
-    .toggle-label:after {
-        width: 18px;
-        /* Smaller toggle switch on mobile */
-        height: 18px;
-        /* Smaller toggle switch on mobile */
+    #resetBtn {
+        padding: 8px 15px;
+        font-size: 14px;
     }
+
+    .dark-mode .calculator {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .dark-mode input[type="number"],
+    .dark-mode input[type="range"] {
+        background-color: #333333;
+        border-color: #444444;
+    }
+
+    .dark-mode .results {
+        background: #222222;
+    }
+
+    .dark-mode #resetBtn {
+        background-color: #993333;
+    }
+
 
 }
