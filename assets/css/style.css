@@ -55,23 +55,21 @@ header {
 
 /* Range input style: Customizes the appearance of range sliders. */
 input[type="range"] {
-    -webkit-appearance: none;
     width: 100%;
     margin: 10px 0;
 }
 
 /* Range track style: Customizes the slider track. */
-input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
+input[type="range"] {width: 100%;
     height: 8px;
     background: linear-gradient(to left, #e097f7, #4874ee);
     border-radius: 4px;
     border: none;
 }
+    
 
 /* Range thumb style: Customizes the slider thumb. */
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+input[type="range"] {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -195,11 +193,6 @@ div.dark-mode-toggle {
 /* Optional: Change background of the switch when active */
 .toggle-checkbox:checked+.toggle-label {
     background: #e097f7;
-}
-
-/* Style adjustments for dark mode */
-.dark-mode .toggle-label {
-    /* Add any specific styles for the toggle switch in dark mode */
 }
 
 /* Footer style: Positions the footer at the bottom. */
