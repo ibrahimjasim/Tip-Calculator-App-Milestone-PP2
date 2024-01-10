@@ -18,11 +18,11 @@
         <div class="calculator">
             <div class="input-group">
                 <label for="billTotal">Bill Total:</label>
-                <input type="number" id="billTotal" placeholder="Enter Bill Total">
+                <input type="number" id="billTotal" placeholder="$">
             </div>
              <!-- This 'input-group' <div> is for the tip percentage input, using a range slider. -->
             <div class="input-group">
-                <label for="tipPercentage">Tip %:</label>
+                <label for="tipPercentage">Tip in %</label>
                 <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipAndTotal()">
                 <span id="tipPercentLabel">15%</span>
             </div>

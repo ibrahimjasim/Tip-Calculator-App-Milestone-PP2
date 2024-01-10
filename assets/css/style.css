@@ -71,7 +71,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 /* Range thumb style: Customizes the slider thumb. */
 input[type="range"]::-webkit-slider-thumb {
-    appearance: ;
+    appearance: none;
     width: 20px;
     height: 20px;
     background: #fafafa;

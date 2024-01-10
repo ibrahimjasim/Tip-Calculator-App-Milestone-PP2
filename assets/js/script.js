@@ -1,46 +1,68 @@
 /**
- * Initializes the event listeners and default values for the tip calculator.
+ * Retrieves an element by its ID from the DOM.
+ * 
+ * @param {string} id - The ID of the DOM element to retrieve.
+ * @returns {Element} The DOM element corresponding to the provided ID.
  */
-function initializeTipCalculator() {
-    updateTipAndTotal(); // Set initial values for the tip calculator
-    document.getElementById('tipPercentage').addEventListener('input', updateTipAndTotal);
-    document.getElementById('splitNumber').addEventListener('input', updateTipAndTotal);
-    document.getElementById('resetBtn').addEventListener('click', resetCalculator);
-    document.getElementById('darkModeToggle').addEventListener('change', toggleDarkMode);
+function getElementById(id) {
+    return document.getElementById(id);
+}
+
+/**
+ * Initializes all event listeners for the tip calculator.
+ * Sets up listeners for input changes and button clicks.
+ */
+function initializeEventListeners() {
+    getElementById('tipPercentage').addEventListener('input', updateTipAndTotal);
+    getElementById('splitNumber').addEventListener('input', updateTipAndTotal);
+    getElementById('resetBtn').addEventListener('click', resetCalculator);
+    getElementById('darkModeToggle').addEventListener('change', toggleDarkMode);
 }
 
 /**
  * Updates the tip percentage, total bill, and split total based on user input.
+ * Calculates the tip amount, total bill including tip, and the split amount per person.
+ * Updates the displayed values accordingly.
  */
 function updateTipAndTotal() {
-    var billTotal = parseFloat(document.getElementById('billTotal').value) || 0;
-    var tipPercent = parseInt(document.getElementById('tipPercentage').value);
-    var splitNumber = parseInt(document.getElementById('splitNumber').value);
+    const billTotal = parseFloat(getElementById('billTotal').value) || 0;
+    const tipPercent = parseInt(getElementById('tipPercentage').value) || 0;
+    const splitNumber = Math.max(parseInt(getElementById('splitNumber').value) || 1, 1); // Ensure at least 1
 
-    document.getElementById('tipPercentLabel').innerText = tipPercent + '%';
-    document.getElementById('splitNumberLabel').innerText = splitNumber.toString();
+    getElementById('tipPercentLabel').innerText = `${tipPercent}%`;
+    getElementById('splitNumberLabel').innerText = splitNumber.toString();
 
-    var tipAmount = billTotal * (tipPercent / 100);
-    var totalBillWithTip = billTotal + tipAmount;
-    var splitTotal = totalBillWithTip / splitNumber;
+    const tipAmount = billTotal * (tipPercent / 100);
+    const totalBillWithTip = billTotal + tipAmount;
+    const splitTotal = totalBillWithTip / splitNumber;
 
-    document.getElementById('tipTotal').innerText = '$' + tipAmount.toFixed(2);
-    document.getElementById('totalBillWithTip').innerText = '$' + totalBillWithTip.toFixed(2);
-    document.getElementById('splitTotal').innerText = '$' + splitTotal.toFixed(2);
+    getElementById('tipTotal').innerText = `$${tipAmount.toFixed(2)}`;
+    getElementById('totalBillWithTip').innerText = `$${totalBillWithTip.toFixed(2)}`;
+    getElementById('splitTotal').innerText = `$${splitTotal.toFixed(2)}`;
 }
 
+/**
+ * Resets the calculator to its default state.
+ * Clears the bill total and resets tip percentage and split number to default values.
+ * Updates the display to reflect these changes.
+ */
 function resetCalculator() {
-    document.getElementById('billTotal').value = '';
-    document.getElementById('tipPercentage').value = 15; 
-    document.getElementById('splitNumber').value = 1; 
+    getElementById('billTotal').value = '';
+    getElementById('tipPercentage').value = 15;
+    getElementById('splitNumber').value = 1;
 
-    updateTipAndTotal(); // Update the displayed values
+    updateTipAndTotal();
 }
+
+/**
+ * Toggles the dark mode for the page.
+ */
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
 }
 
-
-
 // Run after the page is fully loaded
-document.addEventListener('DOMContentLoaded', initializeTipCalculator);
+document.addEventListener('DOMContentLoaded', () => {
+    initializeEventListeners();
+    updateTipAndTotal(); // Set initial values for the tip calculator
+});
