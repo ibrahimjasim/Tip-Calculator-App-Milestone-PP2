@@ -47,8 +47,10 @@ It was placed at the bottom as to lessen the chance of it being accidentally pre
 The red colour is a universal colour that warns the user not to be too eager to press the button without first reading its purpose.
 
 ## Dark mode
-![darkmode2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/3ce45a3e-0968-4a55-821c-30ec9cc7731e)
 This is also to keep true to the purpose of the calculator: to be used at restaurants that are usually dimmed, pubs that are dark and other situations that may encourage the user to protect their vision from the vivid and colourful platform.
+![darkmode2024-01-09 21_24_31](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/3ce45a3e-0968-4a55-821c-30ec9cc7731e)
+![Screenshot 2024-01-09 232751](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/364c5c15-723b-4b3a-b746-09df005dceef)
+![Screenshot 2024-01-10 101641](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/ab1367e3-7b8e-4b25-8e2f-9e97384e104d)
 
 ## Thorough testing steps & screenshots of validator testing
 Since a calculator is supped to calculate, I input values that are easy to double check.
