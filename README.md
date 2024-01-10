@@ -57,3 +57,34 @@ Since a calculator is supped to calculate, I input values that are easy to doubl
 For example, a $100 + 10% tip = $110 total. $110 divided between 2 people = $55. This worked out right.
 
 I also used dark mode and an extremely large number (100000000000000000000000000000000000000) as to test the near maximum of each field (100% tip and split between 20 persons), and it still worked without any error.
+
+I confirmed that the website works in defrent browsers: Chrom, Firefox
+
+I confirmed that the colors and fonts are easy to read and accessible by runnig it through lighthouse in devtools
+![Screenshot 2024-01-10 115257](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/07f3a93e-86ca-465f-a618-4f3043f19dc6)
+
+
+* W3C CSS Validator (Jigsaw)
+
+![Screenshot 2024-01-10 120546](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/175fae8e-7866-4e6a-88a0-a366bed76b25)
+
+* W3C HTML Validator
+  
+![Screenshot 2024-01-10 120358](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/52671f8b-2fee-4cb8-bba0-3b633fb31dd6)
+
+* JSHint JavaScript Validator
+
+![Screenshot 2024-01-10 122805](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/845a27d3-face-4a37-b135-cab67bb30826)
+
+
+##  Deployment 
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+* In the GitHub repostry navigate to the settings tab
+* from the pages section select the main from branch
+* Once the main branch has been selected, the page provide the link to the completed website.
+
+The live link can be found here 	[Tip Calculater](https://ibrahimjasim.github.io/Tip-Calculator-App-Milestone-PP2/)https://ibrahimjasim.github.io/Tip-Calculator-App-Milestone-PP2/)
+
+## Credits 
+### Content 
+* The code to fix the footer to the bottom of the page was taken from  ([https://www.example.com](https://www.shecodes.io/athena/1379-how-to-add-a-footer-with-html-and-css#:~:text=Adding%20a%20footer%20at%20the,and%20left%20attributes%20to%200%20)https://www.shecodes.io/athena/1379-how-to-add-a-footer-with-html-and-css#:~:text=Adding%20a%20footer%20at%20the,and%20left%20attributes%20to%200%20)
