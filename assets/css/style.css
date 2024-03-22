@@ -208,40 +208,45 @@ div.dark-mode-toggle {
 /* Media query for smaller screens (max-width: 414px) */
 @media (max-width: 414px) {
     body {
+        display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
-        height: auto;
+        align-items: center;
+        min-height: 100vh;
         padding: 10px;
+        margin: 0;
     }
-
 
     .calculator {
         padding: 27px;
         height: auto;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-        max-width: none;
-        margin: 100px auto;
+        width: calc(100% - 20px); /* Account for padding */
+        margin: 20px auto;
     }
 
     header {
         text-align: center;
         font-family: Arial, sans-serif;
-       padding-top: 30px;
+        padding-top: 30px;
     }
-    
 
     .calculator input[type="number"] {
         font-size: 16px;
         padding: 8px;
+        width: 100%; /* Ensure inputs do not overflow their container */
     }
 
     .results {
         padding: 8px;
+        margin-top: 10px; /* Add spacing between inputs and results for clarity */
     }
 
     #resetBtn {
         padding: 8px 15px;
         font-size: 14px;
+        width: 100%; /* Make the reset button full width for easier access */
+        box-sizing: border-box; /* Ensure padding doesn't increase button size */
     }
 
     .dark-mode .calculator {
@@ -250,17 +255,19 @@ div.dark-mode-toggle {
 
     .dark-mode input[type="number"],
     .dark-mode input[type="range"] {
-        background-color: #333333;
-        border-color: #444444;
+        background-color: #333;
+        border-color: #444;
+        color: #fff; /* Improve text visibility in dark mode */
     }
 
     .dark-mode .results {
-        background: #222222;
+        background: #222;
+        color: #fff; /* Ensure results are readable in dark mode */
     }
 
     .dark-mode #resetBtn {
         background-color: #993333;
+        color: #fff; /* Improve button visibility */
     }
-
 
 }

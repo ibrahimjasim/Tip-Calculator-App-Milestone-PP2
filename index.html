@@ -14,20 +14,20 @@
         <header>
             <h2>Tip Calculator</h2>
         </header>
-          <!-- This <div> with class 'calculator' acts as a container for the tip calculator interface. -->   
+        <!-- This <div> with class 'calculator' acts as a container for the tip calculator interface. -->
         <div class="calculator">
             <div class="input-group">
                 <label for="billTotal">Bill Total:</label>
                 <input type="number" id="billTotal" placeholder="$">
             </div>
-             <!-- This 'input-group' <div> is for the tip percentage input, using a range slider. -->
+            <!-- This 'input-group' <div> is for the tip percentage input, using a range slider. -->
             <div class="input-group">
                 <label for="tipPercentage">Tip in %</label>
                 <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipAndTotal()">
                 <span id="tipPercentLabel">15%</span>
             </div>
 
-              <!-- This 'input-group' <div> is for the number of people to split the bill. -->
+            <!-- This 'input-group' <div> is for the number of people to split the bill. -->
             <div class="input-group">
                 <label for="splitNumber">Split:</label>
                 <input type="range" id="splitNumber" min="1" max="20" value="1" oninput="updateTipAndTotal()">
@@ -52,20 +52,22 @@
             <!--This is a reast button to skip reload the page evry time the user wants to calculate-->
             <button id="resetBtn">Reset</button>
         </div>
-          <!-- This <div> provides a toggle for switching between light and dark mode. -->
+        <!-- This <div> provides a toggle for switching between light and dark mode. -->
         <div class="dark-mode-toggle">
             <i class="fa-solid fa-sun"></i>
             <i class="fa-solid fa-moon"></i>
             <input type="checkbox" id="darkModeToggle" class="toggle-checkbox">
             <label for="darkModeToggle" class="toggle-label">Dark Mode</label>
-        </div>
+            
+            <!--footer div-->
+            <div class="footer">
+                <footer>
+                    <p>for educational purposes only</p>
+                </footer>
+            </div>
     </main>
-    <div class="footer">
-        <footer>
-            <p>for educational purposes only</p>
-        </footer>
     </div>
-    
+
     <!--javascript and fontawesome-->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/dac366aa16.js" crossorigin="anonymous"></script>
