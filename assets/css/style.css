@@ -263,16 +263,16 @@ div.dark-mode-toggle {
     .dark-mode input[type="range"] {
         background-color: #333;
         border-color: #444;
-        color: #fff; /* Improve text visibility in dark mode */
+        color: #fff; 
     }
 
     .dark-mode .results {
         background: #222;
-        color: #fff; /* Ensure results are readable in dark mode */
+        color: #fff; 
     }
 
     .dark-mode #resetBtn {
         background-color: #993333;
-        color: #fff; /* Improve button visibility */
+        color: #fff;
     }
 }
