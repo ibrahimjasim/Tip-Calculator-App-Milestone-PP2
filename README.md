@@ -1,4 +1,4 @@
-# Tip Calculater 
+# Tip Calculator 
 ![pp2 am i res](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/cecaaed9-2624-4038-a92b-6c3897746080)
 
 ## Site's purpose - key project goals and target audience
