@@ -1,5 +1,6 @@
 # Tip Calculater 
-![Am I Responsive_ - Google Chrome 2024-01-09 21_08_28](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/ac41c63e-da57-4c86-a727-be2ed12e2135)
+![pp2 am i res](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/cecaaed9-2624-4038-a92b-6c3897746080)
+
 ## Site's purpose - key project goals and target audience
 This site was developed in order to help a pair/ group of people split a bill after a tip was added to the total amount.
 Although most people do know the fundamentals of mathmatics, few can calculate percentages, with or without the use of a calculator.
@@ -52,6 +53,12 @@ This is also to keep true to the purpose of the calculator: to be used at restau
 ![Screenshot 2024-01-09 232751](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/364c5c15-723b-4b3a-b746-09df005dceef)
 ![Screenshot 2024-01-10 101641](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/ab1367e3-7b8e-4b25-8e2f-9e97384e104d)
 
+## Mobile screen
+The mobile based web page is a miniature version of the computer based page. It has the exact functions, such as slider for entering tip in % and number of people to split the bill, and the same colouring scheme.
+It also has the day/night-function. It can do everything the webpage can do in terms of functions, input and output.
+![PP2 mobile screen](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/cbd3382f-093d-4cfa-aada-c2319a5b002a)
+
+
 ## Thorough testing steps & screenshots of validator testing
 Since a calculator is supped to calculate, I input values that are easy to double check.
 For example, a $100 + 10% tip = $110 total. $110 divided between 2 people = $55. This worked out right.
@@ -61,7 +68,8 @@ I also used dark mode and an extremely large number (100000000000000000000000000
 I confirmed that the website works in defrent browsers: Chrom, Firefox
 
 I confirmed that the colors and fonts are easy to read and accessible by runnig it through lighthouse in devtools
-![Screenshot 2024-01-10 115257](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/07f3a93e-86ca-465f-a618-4f3043f19dc6)
+![PP2](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/239f61e8-0497-4bbf-bbe2-6f64e944a21d)
+
 
 
 * W3C CSS Validator (Jigsaw)
@@ -75,6 +83,7 @@ I confirmed that the colors and fonts are easy to read and accessible by runnig 
 * JSHint JavaScript Validator
 
 ![Screenshot 2024-01-10 122805](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/845a27d3-face-4a37-b135-cab67bb30826)
+
 
 
 ##  Deployment 
