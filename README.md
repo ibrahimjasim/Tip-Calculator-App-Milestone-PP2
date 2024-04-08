@@ -38,7 +38,7 @@ Using Tip Calculator after a few drinks at the pub with the collegues is a great
 ## Design
 
 ### Wireframes:
-![pp2 bals](https://github.com/ibrahimjasim/Tip-Calculator-App-pp2-/assets/127301769/f88724e6-25f2-4145-a070-8e3fc9e04600)
+![pp2 bals](https://github.com/ibrahimjasim/Tip-Calculator-App-Milestone-PP2/assets/127301769/134d432a-329f-4f6e-a87c-265df09238ac)
 
 
 ### Colour scheme:
